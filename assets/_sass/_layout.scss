@@ -1,0 +1,102 @@
+/**
+ * Reset some basic elements
+ */
+body {
+  height:100%;
+} 
+
+header, section {
+  width: 100%;
+  position: relative;
+}
+
+section {
+  padding: $spacing-unit 0;
+}
+
+.main-wrapper,.error-wrapper {
+  min-width: 320px;
+  min-height: 100%;
+  height: auto;
+  position: relative;
+}
+
+/**
+ * Site header
+ */
+
+#header {
+  background-color: $light-blue;
+  font-size: 20px;
+  height: 50px;
+  margin-top: -40px;
+}
+
+/**
+ * Site banner
+ */
+
+#banner {
+  background-color: $light-red;
+  padding-bottom: 0;
+  height: 250px;
+  // overflow: hidden;
+  .wrapper {
+    height: 110%;
+    margin-top: -15px;
+    position: relative;
+    padding: 0;
+    svg {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}
+
+
+
+/**
+ * Comments
+ */
+#comments {
+  padding-top: 0;
+}
+
+/**
+ * Site footer
+ */
+
+#footer {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  margin-bottom: 0;
+  bottom: 0px;
+  .footer-border {
+    width: 100%;
+    height:20px;
+    background: url(../images/wave.png);
+    background-size: 50px 20px;
+    padding-top: 20px;
+    background-repeat: repeat-x;
+  }
+  .footer-content {
+    background-color: $blue;
+    padding: 5px 5px;
+    border: 1px solid $blue;
+  }
+  .social-wrapper {
+    width: 100%;
+    padding-top: 10px;
+    // margin-top: 10px;
+  }
+}
+
+/**
+ * 404
+ */
+ 
+.error-content {
+  background-color: $blue;
+  padding: 2em;
+}
